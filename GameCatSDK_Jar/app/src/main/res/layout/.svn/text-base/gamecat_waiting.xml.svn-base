@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:background="#00000000"
+android:scrollbars="none"
+android:clickable="true">
+
+
+ <RelativeLayout
+    android:layout_width="124dp"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/gamecat_toast_shape"
+
+    >
+
+
+    <TextView
+        android:id="@+id/waiting_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="数据加载中..."
+        android:layout_marginTop="27dp"
+        android:textSize="14dp"
+
+        android:textColor="@color/gamecat_color_ffffff"
+
+        />
+
+       <ImageView
+           android:id="@+id/waiting_image"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/waiting_textview"
+           android:background="@drawable/gamecat_loading_miao"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="15dp"
+           android:layout_centerHorizontal="true"
+           />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+    <!--<View
+        android:id="@+id/xian"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="22dp"
+        android:layout_above="@+id/tv_last"
+        android:background="#EEEEEE" />
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
