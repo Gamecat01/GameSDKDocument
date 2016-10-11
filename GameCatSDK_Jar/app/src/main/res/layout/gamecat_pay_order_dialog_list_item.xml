@@ -3,49 +3,51 @@
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:background="@color/gamecat_color_ffffff"
-    android:orientation="horizontal" >
+    android:orientation="horizontal">
 
     <RelativeLayout
+        android:id="@+id/li"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:id="@+id/li"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/checkbox"
-        android:orientation="vertical" >
+        android:orientation="vertical">
+
         <RelativeLayout
+            android:id="@+id/rl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rl"
             android:layout_centerVertical="true"
-            android:orientation="vertical" >
-        <TextView
-            android:id="@+id/vouchers_amount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/gamecat_color_333"
-            android:text="500代金券"
-            android:textSize="16dp"
-            />
-        <TextView
-            android:id="@+id/conditions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/gamecat_color_b1b1b1"
-            android:layout_below="@+id/vouchers_amount"
-            android:textSize="12dp"
-            android:text="满500可用"
-            />
-        <TextView
-            android:id="@+id/before_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:layout_below="@+id/conditions"
-            android:textColor="@color/gamecat_color_b1b1b1"
-            android:text="有效期至：2016-07-06"
+            android:orientation="vertical">
 
-            />
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/vouchers_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500代金券"
+                android:textColor="@color/gamecat_color_333"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vouchers_amount"
+                android:text="满500可用"
+                android:textColor="@color/gamecat_color_b1b1b1"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/before_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conditions"
+                android:text="有效期至：2016-07-06"
+                android:textColor="@color/gamecat_color_b1b1b1"
+                android:textSize="12dp"
+
+                />
+        </RelativeLayout>
     </RelativeLayout>
 
     <CheckBox
@@ -56,12 +58,12 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="12dp"
         android:background="@drawable/gamecatpay_checkbox"
-        android:gravity="center_vertical"
+        android:button="@null"
         android:clickable="false"
         android:focusable="false"
-        android:button="@null"
         android:focusableInTouchMode="false"
-         />
+        android:gravity="center_vertical" />
+
     <View
         android:layout_width="wrap_content"
         android:layout_height="0.5dp"

@@ -13,15 +13,15 @@
     </style>
 
     <!-- Application theme. -->
-    <style name="AppTheme"  parent="AppBaseTheme">
+    <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
 
 
     </style>
-    <style name="Widget"></style>
 
+    <style name="Widget"></style>
 
 
     <style name="gamecat_button_common_orange">
@@ -45,6 +45,7 @@
         <item name="android:textColorHint">@color/gamecat_hint_color</item>
         <item name="android:textSize">11dp</item>
     </style>
+
     <style name="gamecatpay_button_common">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">38dp</item>

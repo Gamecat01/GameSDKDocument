@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="#ffffff"
-   >
+    android:background="#ffffff">
 
     <RelativeLayout
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-
         android:layout_centerHorizontal="true"
-        >
+
+        android:layout_marginTop="15dp">
+
         <ImageView
             android:id="@+id/icon"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/gamecat_ic_launcher"
-            />
+            android:src="@drawable/gamecat_ic_launcher" />
+
         <TextView
             android:id="@+id/title_name"
-            android:layout_toRightOf="@+id/icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/icon"
             android:text="游戏猫SDKDemo"
-            android:textSize="20dp"
             android:textColor="@color/gamecat_color_333"
+            android:textSize="20dp"
 
             />
     </RelativeLayout>
@@ -41,25 +39,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title"
-        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
 
-        android:layout_centerHorizontal="true"
-        >
+        android:layout_marginTop="15dp">
 
         <RelativeLayout
             android:id="@+id/phone_view"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:background="@drawable/gamecat_button_shape_unpressed"
-            >
+            android:background="@drawable/gamecat_button_shape_unpressed">
 
             <EditText
                 android:id="@+id/pay_edit"
                 style="@style/gamecat_item_input_edittext"
-                android:maxLength="11"
-
                 android:hint="请输入数额"
+
+                android:maxLength="11"
 
 
                 />
@@ -68,43 +64,40 @@
         </RelativeLayout>
 
         <Button
-            style="@style/gamecat_button_common_orange"
-            android:text="登陆"
-            android:layout_marginTop="20dp"
             android:id="@+id/login"
-            android:background="@drawable/gamecat_button_shape_pressed"
-            android:layout_gravity="center_horizontal"
-            android:layout_below="@+id/phone_view" />
-
-        <Button
             style="@style/gamecat_button_common_orange"
-            android:text="支付"
+            android:layout_below="@+id/phone_view"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:layout_below="@+id/login"
-            android:id="@+id/order"
             android:background="@drawable/gamecat_button_shape_pressed"
-            android:layout_gravity="center_horizontal" />
+            android:text="登陆" />
 
         <Button
+            android:id="@+id/order"
+            style="@style/gamecat_button_common_orange"
+            android:layout_below="@+id/login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gamecat_button_shape_pressed"
+            android:text="支付" />
+
+        <Button
+            android:id="@+id/center"
             style="@style/gamecat_button_common_orange"
             android:layout_below="@+id/order"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:background="@drawable/gamecat_button_shape_pressed"
-            android:text="用户中心"
-            android:id="@+id/center"
-            android:layout_gravity="center_horizontal" />
+            android:text="用户中心" />
 
         <TextView
             android:id="@+id/listener_text"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/center"
             android:layout_marginTop="20dp"
-            android:textSize="20dp"
-            android:layout_height="wrap_content" />
+            android:textSize="20dp" />
     </RelativeLayout>
-
-
-
 
 
 </RelativeLayout>
