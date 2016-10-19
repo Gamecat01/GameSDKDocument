@@ -55,7 +55,7 @@
             android:value="701" />
 
         <meta-data
-            android:name="com.alibaba.app.appkeyzhe"
+            android:name="com.alibaba.app.appkey"
             android:value="23443963" />
         <meta-data
             android:name="com.alibaba.app.appsecret"
